@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F16A582720EE5090000D38BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A582620EE5090000D38BE /* AppDelegate.swift */; };
+		F16A582920EE5090000D38BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A582820EE5090000D38BE /* ViewController.swift */; };
+		F16A582C20EE5090000D38BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16A582A20EE5090000D38BE /* Main.storyboard */; };
+		F16A582E20EE5092000D38BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16A582D20EE5092000D38BE /* Assets.xcassets */; };
+		F16A583120EE5093000D38BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16A582F20EE5093000D38BE /* LaunchScreen.storyboard */; };
+		F16A585D20EE51EB000D38BE /* TopCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A583A20EE51EB000D38BE /* TopCardCell.swift */; };
+		F16A585E20EE51EB000D38BE /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A583C20EE51EB000D38BE /* CardCell.swift */; };
+		F16A585F20EE51EB000D38BE /* RoundedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A583D20EE51EB000D38BE /* RoundedCell.swift */; };
+		F16A586020EE51EB000D38BE /* SubHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A583E20EE51EB000D38BE /* SubHeaderCell.swift */; };
+		F16A586120EE51EB000D38BE /* RoundCornerKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A583F20EE51EB000D38BE /* RoundCornerKind.swift */; };
+		F16A586220EE51EB000D38BE /* BottomCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584020EE51EB000D38BE /* BottomCardCell.swift */; };
+		F16A586320EE51EB000D38BE /* MiddleCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584120EE51EB000D38BE /* MiddleCardCell.swift */; };
+		F16A586420EE51EB000D38BE /* Table+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584320EE51EB000D38BE /* Table+Interaction.swift */; };
+		F16A586520EE51EB000D38BE /* TableUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584520EE51EB000D38BE /* TableUtil.swift */; };
+		F16A586620EE51EB000D38BE /* Roundifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584620EE51EB000D38BE /* Roundifier.swift */; };
+		F16A586720EE51EB000D38BE /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584720EE51EB000D38BE /* Table.swift */; };
+		F16A586820EE51EB000D38BE /* Table+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584820EE51EB000D38BE /* Table+Cell.swift */; };
+		F16A586920EE51EB000D38BE /* Table+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584920EE51EB000D38BE /* Table+Section.swift */; };
+		F16A586A20EE51EB000D38BE /* CardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584D20EE51EB000D38BE /* CardHeader.swift */; };
+		F16A586B20EE51EB000D38BE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584E20EE51EB000D38BE /* Card.swift */; };
+		F16A586C20EE51EB000D38BE /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A584F20EE51EB000D38BE /* RoundedView.swift */; };
+		F16A586D20EE51EB000D38BE /* TopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585020EE51EB000D38BE /* TopCard.swift */; };
+		F16A586E20EE51EB000D38BE /* SubHeaderCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585320EE51EB000D38BE /* SubHeaderCellData.swift */; };
+		F16A587020EE51EB000D38BE /* MiddleCardCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585520EE51EB000D38BE /* MiddleCardCellData.swift */; };
+		F16A587120EE51EB000D38BE /* CellDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585720EE51EB000D38BE /* CellDataKind.swift */; };
+		F16A587220EE51EB000D38BE /* CardCellDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585820EE51EB000D38BE /* CardCellDataKind.swift */; };
+		F16A587320EE51EB000D38BE /* TopCardCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585920EE51EB000D38BE /* TopCardCellData.swift */; };
+		F16A587420EE51EB000D38BE /* BottomCardCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585A20EE51EB000D38BE /* BottomCardCellData.swift */; };
+		F16A587520EE51EB000D38BE /* BottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585B20EE51EB000D38BE /* BottomCard.swift */; };
+		F16A587620EE51EB000D38BE /* MiddleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A585C20EE51EB000D38BE /* MiddleCard.swift */; };
+		F16A587E20EE6B46000D38BE /* ConstraintKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587A20EE6B46000D38BE /* ConstraintKind.swift */; };
+		F16A588020EE6B46000D38BE /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587C20EE6B46000D38BE /* Alignment.swift */; };
+		F16A588120EE6B46000D38BE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587D20EE6B46000D38BE /* Constraint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F16A582320EE5090000D38BE /* CardTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16A582620EE5090000D38BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F16A582820EE5090000D38BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F16A582B20EE5090000D38BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F16A582D20EE5092000D38BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F16A583020EE5093000D38BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F16A583220EE5093000D38BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16A583A20EE51EB000D38BE /* TopCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCardCell.swift; sourceTree = "<group>"; };
+		F16A583C20EE51EB000D38BE /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		F16A583D20EE51EB000D38BE /* RoundedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCell.swift; sourceTree = "<group>"; };
+		F16A583E20EE51EB000D38BE /* SubHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubHeaderCell.swift; sourceTree = "<group>"; };
+		F16A583F20EE51EB000D38BE /* RoundCornerKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornerKind.swift; sourceTree = "<group>"; };
+		F16A584020EE51EB000D38BE /* BottomCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCardCell.swift; sourceTree = "<group>"; };
+		F16A584120EE51EB000D38BE /* MiddleCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleCardCell.swift; sourceTree = "<group>"; };
+		F16A584320EE51EB000D38BE /* Table+Interaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table+Interaction.swift"; sourceTree = "<group>"; };
+		F16A584520EE51EB000D38BE /* TableUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableUtil.swift; sourceTree = "<group>"; };
+		F16A584620EE51EB000D38BE /* Roundifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roundifier.swift; sourceTree = "<group>"; };
+		F16A584720EE51EB000D38BE /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		F16A584820EE51EB000D38BE /* Table+Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table+Cell.swift"; sourceTree = "<group>"; };
+		F16A584920EE51EB000D38BE /* Table+Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table+Section.swift"; sourceTree = "<group>"; };
+		F16A584D20EE51EB000D38BE /* CardHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHeader.swift; sourceTree = "<group>"; };
+		F16A584E20EE51EB000D38BE /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F16A584F20EE51EB000D38BE /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		F16A585020EE51EB000D38BE /* TopCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCard.swift; sourceTree = "<group>"; };
+		F16A585320EE51EB000D38BE /* SubHeaderCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubHeaderCellData.swift; sourceTree = "<group>"; };
+		F16A585520EE51EB000D38BE /* MiddleCardCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleCardCellData.swift; sourceTree = "<group>"; };
+		F16A585720EE51EB000D38BE /* CellDataKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDataKind.swift; sourceTree = "<group>"; };
+		F16A585820EE51EB000D38BE /* CardCellDataKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCellDataKind.swift; sourceTree = "<group>"; };
+		F16A585920EE51EB000D38BE /* TopCardCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCardCellData.swift; sourceTree = "<group>"; };
+		F16A585A20EE51EB000D38BE /* BottomCardCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCardCellData.swift; sourceTree = "<group>"; };
+		F16A585B20EE51EB000D38BE /* BottomCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCard.swift; sourceTree = "<group>"; };
+		F16A585C20EE51EB000D38BE /* MiddleCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleCard.swift; sourceTree = "<group>"; };
+		F16A587A20EE6B46000D38BE /* ConstraintKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintKind.swift; sourceTree = "<group>"; };
+		F16A587C20EE6B46000D38BE /* Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		F16A587D20EE6B46000D38BE /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F16A582020EE5090000D38BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F16A581A20EE5090000D38BE = {
+			isa = PBXGroup;
+			children = (
+				F16A582520EE5090000D38BE /* CardTable */,
+				F16A582420EE5090000D38BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F16A582420EE5090000D38BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F16A582320EE5090000D38BE /* CardTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F16A582520EE5090000D38BE /* CardTable */ = {
+			isa = PBXGroup;
+			children = (
+				F16A583820EE51EB000D38BE /* src */,
+				F16A582620EE5090000D38BE /* AppDelegate.swift */,
+				F16A582820EE5090000D38BE /* ViewController.swift */,
+				F16A582A20EE5090000D38BE /* Main.storyboard */,
+				F16A582D20EE5092000D38BE /* Assets.xcassets */,
+				F16A582F20EE5093000D38BE /* LaunchScreen.storyboard */,
+				F16A583220EE5093000D38BE /* Info.plist */,
+			);
+			path = CardTable;
+			sourceTree = "<group>";
+		};
+		F16A583820EE51EB000D38BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F16A587820EE6AF6000D38BE /* third */,
+				F16A587720EE6AEC000D38BE /* core */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F16A583920EE51EB000D38BE /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F16A583A20EE51EB000D38BE /* TopCardCell.swift */,
+				F16A584020EE51EB000D38BE /* BottomCardCell.swift */,
+				F16A584120EE51EB000D38BE /* MiddleCardCell.swift */,
+				F16A583B20EE51EB000D38BE /* util */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F16A583B20EE51EB000D38BE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F16A583C20EE51EB000D38BE /* CardCell.swift */,
+				F16A583D20EE51EB000D38BE /* RoundedCell.swift */,
+				F16A583E20EE51EB000D38BE /* SubHeaderCell.swift */,
+				F16A583F20EE51EB000D38BE /* RoundCornerKind.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F16A584220EE51EB000D38BE /* table */ = {
+			isa = PBXGroup;
+			children = (
+				F16A584320EE51EB000D38BE /* Table+Interaction.swift */,
+				F16A584420EE51EB000D38BE /* util */,
+				F16A584720EE51EB000D38BE /* Table.swift */,
+				F16A584820EE51EB000D38BE /* Table+Cell.swift */,
+				F16A584920EE51EB000D38BE /* Table+Section.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		F16A584420EE51EB000D38BE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F16A584520EE51EB000D38BE /* TableUtil.swift */,
+				F16A584620EE51EB000D38BE /* Roundifier.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F16A584A20EE51EB000D38BE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F16A584B20EE51EB000D38BE /* card */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F16A584B20EE51EB000D38BE /* card */ = {
+			isa = PBXGroup;
+			children = (
+				F16A584C20EE51EB000D38BE /* util */,
+				F16A585020EE51EB000D38BE /* TopCard.swift */,
+				F16A585120EE51EB000D38BE /* cell */,
+				F16A585B20EE51EB000D38BE /* BottomCard.swift */,
+				F16A585C20EE51EB000D38BE /* MiddleCard.swift */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		F16A584C20EE51EB000D38BE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F16A584D20EE51EB000D38BE /* CardHeader.swift */,
+				F16A584E20EE51EB000D38BE /* Card.swift */,
+				F16A584F20EE51EB000D38BE /* RoundedView.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F16A585120EE51EB000D38BE /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F16A585220EE51EB000D38BE /* util */,
+				F16A585520EE51EB000D38BE /* MiddleCardCellData.swift */,
+				F16A585620EE51EB000D38BE /* protocol */,
+				F16A585920EE51EB000D38BE /* TopCardCellData.swift */,
+				F16A585A20EE51EB000D38BE /* BottomCardCellData.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F16A585220EE51EB000D38BE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F16A585320EE51EB000D38BE /* SubHeaderCellData.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F16A585620EE51EB000D38BE /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F16A585720EE51EB000D38BE /* CellDataKind.swift */,
+				F16A585820EE51EB000D38BE /* CardCellDataKind.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		F16A587720EE6AEC000D38BE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				F16A583920EE51EB000D38BE /* cell */,
+				F16A584220EE51EB000D38BE /* table */,
+				F16A584A20EE51EB000D38BE /* model */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		F16A587820EE6AF6000D38BE /* third */ = {
+			isa = PBXGroup;
+			children = (
+				F16A587920EE6B46000D38BE /* alignment */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		F16A587920EE6B46000D38BE /* alignment */ = {
+			isa = PBXGroup;
+			children = (
+				F16A587A20EE6B46000D38BE /* ConstraintKind.swift */,
+				F16A587C20EE6B46000D38BE /* Alignment.swift */,
+				F16A587D20EE6B46000D38BE /* Constraint.swift */,
+			);
+			path = alignment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F16A582220EE5090000D38BE /* CardTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16A583520EE5093000D38BE /* Build configuration list for PBXNativeTarget "CardTable" */;
+			buildPhases = (
+				F16A581F20EE5090000D38BE /* Sources */,
+				F16A582020EE5090000D38BE /* Frameworks */,
+				F16A582120EE5090000D38BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardTable;
+			productName = CardTable;
+			productReference = F16A582320EE5090000D38BE /* CardTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F16A581B20EE5090000D38BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = eon;
+				TargetAttributes = {
+					F16A582220EE5090000D38BE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F16A581E20EE5090000D38BE /* Build configuration list for PBXProject "CardTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F16A581A20EE5090000D38BE;
+			productRefGroup = F16A582420EE5090000D38BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F16A582220EE5090000D38BE /* CardTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F16A582120EE5090000D38BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16A583120EE5093000D38BE /* LaunchScreen.storyboard in Resources */,
+				F16A582E20EE5092000D38BE /* Assets.xcassets in Resources */,
+				F16A582C20EE5090000D38BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F16A581F20EE5090000D38BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16A587620EE51EB000D38BE /* MiddleCard.swift in Sources */,
+				F16A586520EE51EB000D38BE /* TableUtil.swift in Sources */,
+				F16A585D20EE51EB000D38BE /* TopCardCell.swift in Sources */,
+				F16A587520EE51EB000D38BE /* BottomCard.swift in Sources */,
+				F16A586C20EE51EB000D38BE /* RoundedView.swift in Sources */,
+				F16A587220EE51EB000D38BE /* CardCellDataKind.swift in Sources */,
+				F16A586620EE51EB000D38BE /* Roundifier.swift in Sources */,
+				F16A588120EE6B46000D38BE /* Constraint.swift in Sources */,
+				F16A582920EE5090000D38BE /* ViewController.swift in Sources */,
+				F16A582720EE5090000D38BE /* AppDelegate.swift in Sources */,
+				F16A586420EE51EB000D38BE /* Table+Interaction.swift in Sources */,
+				F16A586E20EE51EB000D38BE /* SubHeaderCellData.swift in Sources */,
+				F16A586B20EE51EB000D38BE /* Card.swift in Sources */,
+				F16A587320EE51EB000D38BE /* TopCardCellData.swift in Sources */,
+				F16A586820EE51EB000D38BE /* Table+Cell.swift in Sources */,
+				F16A587E20EE6B46000D38BE /* ConstraintKind.swift in Sources */,
+				F16A587420EE51EB000D38BE /* BottomCardCellData.swift in Sources */,
+				F16A586320EE51EB000D38BE /* MiddleCardCell.swift in Sources */,
+				F16A585E20EE51EB000D38BE /* CardCell.swift in Sources */,
+				F16A586920EE51EB000D38BE /* Table+Section.swift in Sources */,
+				F16A585F20EE51EB000D38BE /* RoundedCell.swift in Sources */,
+				F16A586720EE51EB000D38BE /* Table.swift in Sources */,
+				F16A587020EE51EB000D38BE /* MiddleCardCellData.swift in Sources */,
+				F16A587120EE51EB000D38BE /* CellDataKind.swift in Sources */,
+				F16A586120EE51EB000D38BE /* RoundCornerKind.swift in Sources */,
+				F16A588020EE6B46000D38BE /* Alignment.swift in Sources */,
+				F16A586220EE51EB000D38BE /* BottomCardCell.swift in Sources */,
+				F16A586A20EE51EB000D38BE /* CardHeader.swift in Sources */,
+				F16A586020EE51EB000D38BE /* SubHeaderCell.swift in Sources */,
+				F16A586D20EE51EB000D38BE /* TopCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F16A582A20EE5090000D38BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F16A582B20EE5090000D38BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F16A582F20EE5093000D38BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F16A583020EE5093000D38BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F16A583320EE5093000D38BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F16A583420EE5093000D38BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F16A583620EE5093000D38BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CardTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.eon.CardTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F16A583720EE5093000D38BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CardTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.eon.CardTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F16A581E20EE5090000D38BE /* Build configuration list for PBXProject "CardTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16A583320EE5093000D38BE /* Debug */,
+				F16A583420EE5093000D38BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16A583520EE5093000D38BE /* Build configuration list for PBXNativeTarget "CardTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16A583620EE5093000D38BE /* Debug */,
+				F16A583720EE5093000D38BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F16A581B20EE5090000D38BE /* Project object */;
+}
