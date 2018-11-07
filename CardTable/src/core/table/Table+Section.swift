@@ -3,6 +3,9 @@ import UIKit
  * 
  */
 extension Table {
+   func numberOfSections(in tableView: UITableView) -> Int {
+      return sections.count
+   }
    /**
     * Returns title for the section
     */
@@ -22,13 +25,13 @@ extension Table {
     */
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     
-    //Continue here:
+    //Continue here: 🏀 
         //find header etc
     
       let headerView = Header.init(frame: CGRect.init(x: 0, y: 0, width: tableView.bounds.size.width, height: 40))
       headerView.headerLabel?.text = self.tableView(self, titleForHeaderInSection: section)
       //sets the correct roundcorners
-      if section == 0 && (sections[0].data.count > 0 && sections[0].key != .none){
+      if section == 0 && (sections[0].cellData.count > 0 && sections[0].title != ""){
            headerView.corners = [.topLeft,.topRight]
       }else {
            headerView.corners = []
@@ -43,7 +46,7 @@ extension Table {
       //footerView.backgroundColor = .green
       //set the correct roundcorners
       let card:Card = sections[section]
-      if  card is MiddleCard && TableUtil.bottomSpace(table:self) > 0{
+      if card is MiddleCard && TableUtil.bottomSpace(table:self) > 0{
            footerView.corners = [.bottomLeft,.bottomRight]
       }else {
            footerView.corners = []

@@ -12,7 +12,7 @@ extension Table {
                 _ = middleCardCellData
                 //transition NavController to new UIViewController etc
             }
-        }else if let topCardCellData = cellData as? TopCardCellData{
+        } else if let topCardCellData = cellData as? TopCardCellData{
             DispatchQueue.main.async {
                 _ = topCardCellData
                 //transition NavController to new UIViewController etc
@@ -20,4 +20,3 @@ extension Table {
         }
     }
 }
-

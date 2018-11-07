@@ -5,7 +5,7 @@ class Table:UITableView {
     init(sections:[Card],frame: CGRect, style: UITableViewStyle){
         self.sections = sections
         super.init(frame: frame, style: style)
-        registerCells()
+        registerCells()/*Registers Cell types*/
         self.dataSource = self
         self.delegate = self
         self.separatorStyle = .none
@@ -21,5 +21,6 @@ class Table:UITableView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+   
 }
 

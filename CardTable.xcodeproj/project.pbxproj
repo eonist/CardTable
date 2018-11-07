@@ -40,6 +40,7 @@
 		F16A587E20EE6B46000D38BE /* ConstraintKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587A20EE6B46000D38BE /* ConstraintKind.swift */; };
 		F16A588020EE6B46000D38BE /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587C20EE6B46000D38BE /* Alignment.swift */; };
 		F16A588120EE6B46000D38BE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A587D20EE6B46000D38BE /* Constraint.swift */; };
+		F18028582192CB1E009CDF02 /* Table+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18028572192CB1E009CDF02 /* Table+Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		F16A587A20EE6B46000D38BE /* ConstraintKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintKind.swift; sourceTree = "<group>"; };
 		F16A587C20EE6B46000D38BE /* Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		F16A587D20EE6B46000D38BE /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		F18028572192CB1E009CDF02 /* Table+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table+Header.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				F16A583A20EE51EB000D38BE /* TopCardCell.swift */,
-				F16A584020EE51EB000D38BE /* BottomCardCell.swift */,
 				F16A584120EE51EB000D38BE /* MiddleCardCell.swift */,
+				F16A584020EE51EB000D38BE /* BottomCardCell.swift */,
 				F16A583B20EE51EB000D38BE /* util */,
 			);
 			path = cell;
@@ -155,11 +157,12 @@
 		F16A584220EE51EB000D38BE /* table */ = {
 			isa = PBXGroup;
 			children = (
-				F16A584320EE51EB000D38BE /* Table+Interaction.swift */,
 				F16A584420EE51EB000D38BE /* util */,
 				F16A584720EE51EB000D38BE /* Table.swift */,
 				F16A584820EE51EB000D38BE /* Table+Cell.swift */,
 				F16A584920EE51EB000D38BE /* Table+Section.swift */,
+				F16A584320EE51EB000D38BE /* Table+Interaction.swift */,
+				F18028572192CB1E009CDF02 /* Table+Header.swift */,
 			);
 			path = table;
 			sourceTree = "<group>";
@@ -185,10 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				F16A584C20EE51EB000D38BE /* util */,
-				F16A585020EE51EB000D38BE /* TopCard.swift */,
 				F16A585120EE51EB000D38BE /* cell */,
-				F16A585B20EE51EB000D38BE /* BottomCard.swift */,
+				F16A585020EE51EB000D38BE /* TopCard.swift */,
 				F16A585C20EE51EB000D38BE /* MiddleCard.swift */,
+				F16A585B20EE51EB000D38BE /* BottomCard.swift */,
 			);
 			path = card;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				F16A582920EE5090000D38BE /* ViewController.swift in Sources */,
 				F16A582720EE5090000D38BE /* AppDelegate.swift in Sources */,
 				F16A586420EE51EB000D38BE /* Table+Interaction.swift in Sources */,
+				F18028582192CB1E009CDF02 /* Table+Header.swift in Sources */,
 				F16A586E20EE51EB000D38BE /* SubHeaderCellData.swift in Sources */,
 				F16A586B20EE51EB000D38BE /* Card.swift in Sources */,
 				F16A587320EE51EB000D38BE /* TopCardCellData.swift in Sources */,

@@ -26,12 +26,16 @@ class BottomCardCell:CardCell<BottomCardCellData>{
       fatalError("init(coder:) has not been implemented")
    }
 }
-
+/**
+ * Constants
+ */
 extension BottomCardCell{
    static let cellHeight:CGFloat = 24
-    static let cellReuseIdendifier:String = "\(TopCardCell.self)"
+   static let cellReuseIdendifier:String = "\(BottomCardCell.self)"
 }
-
+/**
+ * Create
+ */
 extension BottomCardCell{
    /**
     * Creates TitleLabel
@@ -42,17 +46,17 @@ extension BottomCardCell{
            label.text = "Title"
            label.font = UIFont.boldSystemFont(ofSize: 20.0)
            label.textColor = .darkGray
-           label.alignText = .center
-           //        label.backgroundColor = .green
+           label.textAlignment = .center
+           label.backgroundColor = .purple
            self.contentView.addSubview(label)
            return label
       }()
       label.activateConstraint { label in
-           let top = Constraint.anchor(label, to: self.contentView, align: .top, alignTo: .top, offset:ThumbCell.margin.y+4)
-           let left = Constraint.anchor(label, to: self.imgView, align: .left, alignTo: .right, offset:ThumbCell.margin.x+4)
-           let right = Constraint.anchor(label, to: self.contentView, align: .right, alignTo: .right, offset:0)//possibly add some negative margin here
-           let h = Constraint.height(label, to:self.imgView , multiplier:  0.5)
-           return [left,/*,right*/right,top,h]
+         let top = Constraint.anchor(label, to: self.contentView, align: .top, alignTo: .top, offset:/*ThumbCell.margin.y+*/ 4)
+         let left = Constraint.anchor(label, to: self.contentView, align: .left, alignTo: .right, offset:/*ThumbCell.margin.x+*/ 4)
+         let right = Constraint.anchor(label, to: self.contentView, align: .right, alignTo: .left, offset:0)//possibly add some negative margin here
+         let h = Constraint.height(label, to: self.contentView, multiplier: 0.5)
+         return [left,/*,right*/right,top,h]
       }
       return label
    }
