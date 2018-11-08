@@ -33,7 +33,7 @@ extension Table:UITableViewDelegate,UITableViewDataSource{
                 return cell as CardCell
             }else if data is SubHeaderCellData{
                guard let cell:SubHeaderCell = tableView.dequeueReusableCell(withIdentifier: SubHeaderCell.cellReuseIdendifier, for: indexPath as IndexPath) as? SubHeaderCell else {fatalError("err")}
-//               cell.data = data as? SubHeaderCellData
+               cell.data = data as? SubHeaderCellData
                return cell
             } else {
                fatalError("err: \(data)")

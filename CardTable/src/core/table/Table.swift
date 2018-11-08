@@ -15,7 +15,7 @@ class Table:UITableView {
         self.tableHeaderView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 0, height: CGFloat.leastNormalMagnitude)))
         self.tableFooterView = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 0, height: CGFloat.leastNormalMagnitude)))
         /*Style*/
-        self.backgroundColor = .magenta
+        self.backgroundColor = .black
     }
     /**
      * Boilerplate

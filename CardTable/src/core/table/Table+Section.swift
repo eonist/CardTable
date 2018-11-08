@@ -3,6 +3,9 @@ import UIKit
  * Table + Section
  */
 extension Table {
+   /**
+    *
+    */
    func numberOfSections(in tableView: UITableView) -> Int {
       return sections.count
    }
@@ -16,25 +19,38 @@ extension Table {
      * Returns the correct section header height
      */
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        //TODO: ⚠️️ make enum if else with this: isBottom(idxPath,sections), isTop(), and then just else
-        return Card.cardHeaderHeight
+      //TODO: ⚠️️ make enum if else with this: isBottom(idxPath,sections), isTop(), and then just else
+      let card:Card = sections[section]
+      if card.title == nil{//if title is nil then we use no header
+         return 0
+      }else{
+         return Header.headerHeight
+      }
     }
+   func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+      let card:Card = sections[section]
+      if card.cellData.count == 1{//if title is nil then we use no header
+         return 0
+      } else {
+         return Footer.footerHeight
+      }
+   }
    /**
     * Returns a Header UIView for section index
     * NOTE: this is a quick hack, do this with dequeueReusableHeaderFooterView etc,
     */
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    
-    //Continue here: 🏀 
-        //find header etc
-    
       let headerView = Header.init(frame: CGRect.init(x: 0, y: 0, width: tableView.bounds.size.width, height: 40))
-      headerView.headerLabel?.text = self.tableView(self, titleForHeaderInSection: section)
+      headerView.headerLabel.text = self.tableView(self, titleForHeaderInSection: section)
+      let card:Card = sections[section]
+//      Swift.print("card.title:  \(card.title)")
       //sets the correct roundcorners
-      if section == 0 && (sections[0].cellData.count > 0 && sections[0].title != ""){
+      if card.title == nil{//if title is nil then we use no header
+         return nil
+      } else if (card.cellData.count > 0 && card.title != ""){
            headerView.corners = [.topLeft,.topRight]
-      }else {
-           headerView.corners = []
+      } else {
+          headerView.corners = []
       }
       return headerView
   }
@@ -42,7 +58,7 @@ extension Table {
    * Returns a Footer UIView for section index
    */
   func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-      let footerView = RoundedView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.bounds.size.width, height: 40))
+      let footerView = Footer.init(frame: CGRect.init(x: 0, y: 0, width: tableView.bounds.size.width, height: 40))
       //footerView.backgroundColor = .green
       //set the correct roundcorners
       let card:Card = sections[section]

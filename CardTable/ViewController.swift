@@ -2,18 +2,18 @@ import UIKit
 
 
 
-//add margins to things 👈
+//add margins to things ✅
+//add margins to card
 //Disable sticky ✅
 //different BG-color
-//Check readme
-   //add todo
-//add cool colors, that instagram post??
+   //find cool colors,that instagram post??
 //check notepad
 //add carthage
-//add bottom card
+//add bottom card 
 //make the cardlib open
 //fix topcard
-
+//Fix problem if there is only one top card, it should get top and bottom rounded
+//fix problem if topcard has section header, then drop rounded top for next item
 
 class ViewController: UIViewController {
    lazy var tableView:Table = createTable()
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         Swift.print("ViewController.init()")
         /*UI*/
-        self.view.backgroundColor = .cyan
+        self.view.backgroundColor = .brown
         _ = tableView
     }
 }
@@ -45,8 +45,9 @@ extension ViewController{
    private func createCards() -> [Card]{
       /*Header*/
       let topCard:TopCard = {
-         let suggested = TopCardCellData.init(content:["The Verge - IPhoneX review","Wired - AI predicts the future"])
-         let card = TopCard(title:"Suggested",cellData:[suggested])
+         let theVerge = TopCardCellData.init(content:["The Verge - IPhoneX review"])
+         let suggested = TopCardCellData.init(content:["Wired - AI predicts the future"])
+         let card = TopCard(title:"Suggested",cellData:[theVerge,suggested])
          return card
       }()
       /*Content*/
@@ -57,16 +58,16 @@ extension ViewController{
          /*Inserts subHeader*/
          let youAreAllCaughtUp = SubHeaderCellData.init(title:"Your all caught up")
          let financialTimes = MiddleCardCellData.init(title:"Mynamar sees new investments",content:"The asian country sees new opertiunities as investors flok to the...", date: "8H ago")
-         let card = MiddleCard(title:"Following",cellData:[nyTimes,treehugger,gizmodo,youAreAllCaughtUp,financialTimes])
+         let card = MiddleCard(title:"Subscribed",cellData:[nyTimes,treehugger,gizmodo,youAreAllCaughtUp,financialTimes])
          return card
       }()
       /*Footer*/
       let bottomCard:BottomCard = {
          let loadMore = BottomCardCellData.init(content:"Load more...")
-         let card = BottomCard(title:nil,cellData:[loadMore])
+         let card = BottomCard(title:nil,cellData:[loadMore])//if title is nil then we use no header
          return card
       }()
-      return [topCard,middleCard/*bottomCard*/]
+      return [topCard, middleCard, bottomCard]
    }
 }
 

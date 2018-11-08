@@ -8,7 +8,7 @@ class RoundedView:UIView,RoundCornerKind{
     var corners:UIRectCorner = []
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
     }
     /**
      * NOTE: If you're using Auto Layout,  you'll need to subclass your UIView and call roundCorners in the view's layoutSubviews for optimal effect.

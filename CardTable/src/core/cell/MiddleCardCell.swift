@@ -1,7 +1,5 @@
 import UIKit
 
-
-
 class MiddleCardCell:CardCell<MiddleCardCellData>{
    lazy var dateLabel:UILabel = createDateLabel()
    lazy var contentLable:UITextView = createContentLabel()
@@ -24,7 +22,7 @@ class MiddleCardCell:CardCell<MiddleCardCellData>{
          contentLable.text = data.content
          
 //         textLabel?.text = "middlecardcell"
-         self.contentView.backgroundColor = .orange
+         self.contentView.backgroundColor = MiddleCardCell.backgroundColor
       }
    }
    /**
@@ -47,11 +45,13 @@ extension MiddleCardCell{
          let label:UILabel = .init()//.init(frame: rect)
          label.text = "date"
          label.font = UIFont.boldSystemFont(ofSize: 16.0)
-         label.textColor = .darkGray
-         label.backgroundColor = .orange
+         label.textColor = .black
+//         label.backgroundColor = .orange
          label.textAlignment = .right
          self.contentView.addSubview(label)
-         label.backgroundColor = .green
+         label.backgroundColor = .clear
+         label.layer.borderWidth = 0.5
+         label.layer.borderColor = UIColor.black.cgColor
          return label
       }()
       label.activateConstraint { label in
@@ -73,9 +73,11 @@ extension MiddleCardCell{
          let textField = UITextView.init()
          textField.text = "Testing"
          self.contentView.addSubview(textField)
-         textField.textColor = .white
+         textField.textColor = .black
          textField.textAlignment = .left
-         textField.backgroundColor = .lightGray
+         textField.backgroundColor = .clear
+         textField.layer.borderWidth = 0.5
+         textField.layer.borderColor = UIColor.black.cgColor
          textField.font = .boldSystemFont(ofSize: 14)
          return textField
       }()
@@ -107,18 +109,20 @@ extension MiddleCardCell{
       let label:UILabel = {
          let label:UILabel = .init()//.init(frame: rect)
          label.text = "title"
-         label.font = UIFont.boldSystemFont(ofSize: 20.0)
+         label.font = .boldSystemFont(ofSize: 20.0)
          label.textColor = .darkGray
          label.backgroundColor = .orange
          label.textAlignment = .left
          self.contentView.addSubview(label)
-         label.backgroundColor = .yellow
+         label.backgroundColor = .clear
+         label.layer.borderWidth = 0.5
+         label.layer.borderColor = UIColor.black.cgColor
          return label
       }()
       label.activateConstraint { label in
          let top = Constraint.anchor(label, to: self.contentView, align: .top, alignTo: .top, offset:Margin.vertical)
          let left = Constraint.anchor(label, to: self.contentView, align: .left, alignTo: .left, offset:Margin.horizontal)
-         let right = Constraint.anchor(label, to: dateLabel, align: .right, alignTo: .left, offset:0)//possibly add some negative margin here
+         let right = Constraint.anchor(label, to: dateLabel, align: .right, alignTo: .left, offset:Margin.verticalSpaceBetween)//possibly add some negative margin here
 //         let h = Constraint.height(label, to: self.contentView, multiplier: 0.5)
          let h = Constraint.height(label, height: 32)
          return [left,right,top,h]
@@ -131,6 +135,7 @@ extension MiddleCardCell{
  * Constants
  */
 extension MiddleCardCell{
+   static let backgroundColor:UIColor = Constants.Colors.limeGreen.uiColor
    static let cellHeight:CGFloat = 124
    static let cellReuseIdendifier:String = "\(MiddleCardCell.self)"
    enum Margin{

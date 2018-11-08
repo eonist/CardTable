@@ -8,9 +8,8 @@ class SubHeaderCell:CardCell<SubHeaderCellData>{
    override var data: SubHeaderCellData?{
       didSet {
          guard let data:SubHeaderCellData = data else {fatalError("data not avaiable")}
-         //         let content:String = data.content.reduce(""){$0 + "\($1)/n"}//adds line breaks for each paragraph
-         //         contentLable.text = content
-         
+         let content:String = data.title//content.reduce(""){$0 + "\($1)/n"}//adds line breaks for each paragraph
+         textLabel?.text = content
       }
    }
    /**
@@ -21,7 +20,8 @@ class SubHeaderCell:CardCell<SubHeaderCellData>{
       self.selectionStyle = .none/*disables the selection highlighting*/
       self.backgroundColor = .white
       textLabel?.text = "SubHeader"
-      textLabel?.textColor = .gray
+      textLabel?.textColor = .darkGray
+      textLabel?.font = .systemFont(ofSize: 16)
    }
    /**
     * Boilerplate
@@ -37,4 +37,3 @@ extension SubHeaderCell{
    static let cellHeight:CGFloat = 32
    static let cellReuseIdendifier:String = "\(SubHeaderCell.self)"
 }
-

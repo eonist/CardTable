@@ -9,6 +9,3 @@ class Card{
    }
 }
 
-extension Card{
-   static let cardHeaderHeight:CGFloat = 24
-}
