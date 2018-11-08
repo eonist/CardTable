@@ -34,7 +34,7 @@ class SubHeaderCell:CardCell<SubHeaderCellData>{
  * Constants
  */
 extension SubHeaderCell{
-   static let cellHeight:CGFloat = 24
+   static let cellHeight:CGFloat = 32
    static let cellReuseIdendifier:String = "\(SubHeaderCell.self)"
 }
 

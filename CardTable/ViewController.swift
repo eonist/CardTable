@@ -1,8 +1,19 @@
 import UIKit
 
-//Continue here: 🏀?
-   //make CardData<ContentSection> or just FooterCardData and HeaderCardData and ContentCardData for now? 👈
-   //try making the Table methods inspired by legacy 👈
+
+
+//add margins to things 👈
+//Disable sticky ✅
+//different BG-color
+//Check readme
+   //add todo
+//add cool colors, that instagram post??
+//check notepad
+//add carthage
+//add bottom card
+//make the cardlib open
+//fix topcard
+
 
 class ViewController: UIViewController {
    lazy var tableView:Table = createTable()
@@ -10,11 +21,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         Swift.print("ViewController.init()")
         /*UI*/
+        self.view.backgroundColor = .cyan
         _ = tableView
     }
 }
 /**
- * 
+ * Create
  */
 extension ViewController{
    /**
@@ -22,8 +34,8 @@ extension ViewController{
     */
    func createTable() -> Table {
       let cards:[Card] = createCards()
-      Swift.print("cards.count:  \(cards.count)")
-      let table:Table = Table.init(sections:cards, frame: self.view.bounds, style: .plain)
+      let table:Table = Table.init(sections:cards, frame: self.view.bounds, style: .grouped)
+      //TODO:⚠️️ use constraints
       view.addSubview(table)
       return table
    }

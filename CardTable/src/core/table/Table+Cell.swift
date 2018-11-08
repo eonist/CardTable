@@ -55,7 +55,7 @@ extension Table:UITableViewDelegate,UITableViewDataSource{
          }else if cardCellData is BottomCardCellData {
               return BottomCardCell.cellHeight
          }else if cardCellData is SubHeaderCellData {
-            return 24//SubHeaderCell.cellHeight
+            return SubHeaderCell.cellHeight
          }else {
             fatalError("should not be possible cardCellData: \(cardCellData)")
         }

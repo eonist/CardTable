@@ -30,7 +30,7 @@ class BottomCardCell:CardCell<BottomCardCellData>{
  * Constants
  */
 extension BottomCardCell{
-   static let cellHeight:CGFloat = 24
+   static let cellHeight:CGFloat = 48
    static let cellReuseIdendifier:String = "\(BottomCardCell.self)"
 }
 /**

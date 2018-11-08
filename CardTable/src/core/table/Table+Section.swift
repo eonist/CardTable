@@ -1,6 +1,6 @@
 import UIKit
 /**
- * 
+ * Table + Section
  */
 extension Table {
    func numberOfSections(in tableView: UITableView) -> Int {
