@@ -8,6 +8,7 @@ class Header:Section {
    override init(frame: CGRect) {
       super.init(frame: frame)
       _ = headerLabel
+      
    }
    /**
     * Boilerplate
@@ -26,9 +27,9 @@ extension Header {
    func createHeaderLabel() -> UILabel{
       let headerLabel:UILabel = .init(frame: .zero)
       headerLabel.font = UIFont.boldSystemFont(ofSize: 16)
-      headerLabel.textColor = .darkGray
+      headerLabel.textColor = .black
       headerLabel.textAlignment = .center
-      headerLabel.backgroundColor = .white
+      headerLabel.backgroundColor = .clear
       self.addSubview(headerLabel)
       headerLabel.activateConstraint { view in
          let anchor = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft)

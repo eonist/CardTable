@@ -26,3 +26,21 @@ class Table:UITableView {
    
 }
 
+/**
+ * TIPS: Access all colors via: Constants.Colors.allCases
+ * EXAMPLE: Constants.Colors.allCases[1]//UIColor.yellow
+ * EXAMPLE: Constants.Colors.red//UIColor.red
+ */
+class Constants{
+   enum Colors:String,CaseIterable{
+      case blue = "4A90E2", purple = "BD10E0", turqois = "50E3C2", limeGreen = "B8E986"
+      var uiColor:UIColor {
+         return UIColor.init(hex: self.rawValue)
+      }
+   }
+   enum CardColors{
+      static let top:UIColor = Colors.purple.uiColor
+      static let middle:UIColor = Colors.limeGreen.uiColor
+      static let bottom:UIColor = Colors.blue.uiColor
+   }
+}

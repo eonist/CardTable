@@ -28,13 +28,13 @@ extension TopCardCell{
          label.font = .boldSystemFont(ofSize: 16.0)
          label.textColor = .black
          label.backgroundColor = .clear
-         label.layer.borderWidth = 0.5
-         label.layer.borderColor = UIColor.black.cgColor
+//         label.layer.borderWidth = 0.5
+//         label.layer.borderColor = UIColor.black.cgColor
          self.contentView.addSubview(label)
          return label
       }()
       label.activateConstraint { label in
-         let top = Constraint.anchor(label, to: self.contentView, align: .top, alignTo: .top, offset:Margin.vertical)
+         let top = Constraint.anchor(label, to: self.contentView, align: .top, alignTo: .top, offset:0)
          let l = Constraint.anchor(label, to: self.contentView, align: .left, alignTo: .left, offset:Margin.horizontal)
          let r = Constraint.anchor(label, to: self.contentView, align: .right, alignTo: .right, offset:-Margin.horizontal)//possibly add some negative margin here
          let h = Constraint.height(label, height: 24)//(self.contentView, to: self.contentView, offset: 0, multiplier: 0.5)
@@ -47,12 +47,12 @@ extension TopCardCell{
  * Constants
  */
 extension TopCardCell{
-   static let cellHeight:CGFloat = 48
+   static let cellHeight:CGFloat = 32
    static let cellReuseIdendifier:String = "\(TopCardCell.self)"
-   static let backgroundColor:UIColor = Constants.Colors.purple.uiColor
+   static let backgroundColor:UIColor = Constants.CardColors.top
    enum Margin{
       static let horizontal:CGFloat = 12
-      static let vertical:CGFloat = 12
+      static let vertical:CGFloat = 6
       static let verticalSpaceBetween:CGFloat = 4
    }
 }

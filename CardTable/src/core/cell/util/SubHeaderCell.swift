@@ -20,7 +20,7 @@ class SubHeaderCell:CardCell<SubHeaderCellData>{
       self.selectionStyle = .none/*disables the selection highlighting*/
       self.backgroundColor = .white
       textLabel?.text = "SubHeader"
-      textLabel?.textColor = .darkGray
+      textLabel?.textColor = .black
       textLabel?.font = .systemFont(ofSize: 16)
    }
    /**

@@ -4,12 +4,6 @@ class MiddleCardCell:CardCell<MiddleCardCellData>{
    lazy var dateLabel:UILabel = createDateLabel()
    lazy var contentLable:UITextView = createContentLabel()
    lazy var titleLabel:UILabel = createTitleLabel()
-//   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-//      super.init(style: style, reuseIdentifier: reuseIdentifier)
-//      //        _ = dateLabel
-//      //        _ = contentLable
-//      //        _ = titleLabel
-//   }
    /**
     * When you set the data different UI's are updated
     */
@@ -50,8 +44,8 @@ extension MiddleCardCell{
          label.textAlignment = .right
          self.contentView.addSubview(label)
          label.backgroundColor = .clear
-         label.layer.borderWidth = 0.5
-         label.layer.borderColor = UIColor.black.cgColor
+//         label.layer.borderWidth = 0.5
+//         label.layer.borderColor = UIColor.black.cgColor
          return label
       }()
       label.activateConstraint { label in
@@ -76,8 +70,8 @@ extension MiddleCardCell{
          textField.textColor = .black
          textField.textAlignment = .left
          textField.backgroundColor = .clear
-         textField.layer.borderWidth = 0.5
-         textField.layer.borderColor = UIColor.black.cgColor
+//         textField.layer.borderWidth = 0.5
+//         textField.layer.borderColor = UIColor.black.cgColor
          textField.font = .boldSystemFont(ofSize: 14)
          return textField
       }()
@@ -110,13 +104,13 @@ extension MiddleCardCell{
          let label:UILabel = .init()//.init(frame: rect)
          label.text = "title"
          label.font = .boldSystemFont(ofSize: 20.0)
-         label.textColor = .darkGray
+         label.textColor = .black
          label.backgroundColor = .orange
          label.textAlignment = .left
          self.contentView.addSubview(label)
          label.backgroundColor = .clear
-         label.layer.borderWidth = 0.5
-         label.layer.borderColor = UIColor.black.cgColor
+//         label.layer.borderWidth = 0.5
+//         label.layer.borderColor = UIColor.black.cgColor
          return label
       }()
       label.activateConstraint { label in
@@ -135,7 +129,7 @@ extension MiddleCardCell{
  * Constants
  */
 extension MiddleCardCell{
-   static let backgroundColor:UIColor = Constants.Colors.limeGreen.uiColor
+   static let backgroundColor:UIColor = Constants.CardColors.middle
    static let cellHeight:CGFloat = 124
    static let cellReuseIdendifier:String = "\(MiddleCardCell.self)"
    enum Margin{

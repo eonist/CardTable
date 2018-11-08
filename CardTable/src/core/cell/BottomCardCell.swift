@@ -48,7 +48,7 @@ extension BottomCardCell{
 extension BottomCardCell{
    static let cellHeight:CGFloat = 48
    static let cellReuseIdendifier:String = "\(BottomCardCell.self)"
-   static let backgroundColor:UIColor = Constants.Colors.blue.uiColor
+   static let backgroundColor:UIColor = Constants.CardColors.bottom
    enum Margin{
       static let horizontal:CGFloat = 12
       static let vertical:CGFloat = 12

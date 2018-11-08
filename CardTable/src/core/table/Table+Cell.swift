@@ -34,6 +34,9 @@ extension Table:UITableViewDelegate,UITableViewDataSource{
             }else if data is SubHeaderCellData{
                guard let cell:SubHeaderCell = tableView.dequeueReusableCell(withIdentifier: SubHeaderCell.cellReuseIdendifier, for: indexPath as IndexPath) as? SubHeaderCell else {fatalError("err")}
                cell.data = data as? SubHeaderCellData
+               if section is MiddleCard {
+                  cell.backgroundColor = Constants.CardColors.middle
+               }
                return cell
             } else {
                fatalError("err: \(data)")
