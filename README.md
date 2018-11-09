@@ -1,8 +1,14 @@
-# CardLib
-Organizes TableView in cards
+# Cards
+Organises TableView in cards
+
+<img width="262" alt="img" src="https://rawgit.com/stylekit/img/master/cards.gif">
 
 ### Features:
-- Cards may expand and minimize to desired height
+- Rounded corners
+- Cells group into cards
+- Top, Middle, Bottom cards
+- Utilises UITableView
 
-//Continue here 🏀
-   //copy the text from the notebook
+### Todo:
+- Disable scrollBar graphic
+- Make carthage framework
