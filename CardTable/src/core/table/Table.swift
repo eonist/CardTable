@@ -27,9 +27,7 @@ class Table:UITableView {
 }
 
 /**
- * TIPS: Access all colors via: Constants.Colors.allCases
- * EXAMPLE: Constants.Colors.allCases[1]//UIColor.yellow
- * EXAMPLE: Constants.Colors.red//UIColor.red
+ * Constants
  */
 class Constants{
    enum Colors:String,CaseIterable{

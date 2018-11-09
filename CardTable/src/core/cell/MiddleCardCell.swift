@@ -14,17 +14,10 @@ class MiddleCardCell:CardCell<MiddleCardCellData>{
          dateLabel.text = data.date
          titleLabel.text = data.title
          contentLable.text = data.content
-         
 //         textLabel?.text = "middlecardcell"
          self.contentView.backgroundColor = MiddleCardCell.backgroundColor
       }
    }
-   /**
-    * Boilerplate
-    */
-//   required init?(coder aDecoder: NSCoder) {
-//      fatalError("init(coder:) has not been implemented")
-//   }
 }
 
 /**
@@ -75,17 +68,6 @@ extension MiddleCardCell{
          textField.font = .boldSystemFont(ofSize: 14)
          return textField
       }()
-      
-      //      let label:UILabel = {
-      //         let label:UILabel = .init()//.init(frame: rect)
-      //         label.text = "Title"
-      //         label.font = UIFont.boldSystemFont(ofSize: 14.0)
-      //         label.textColor = .black
-      //         label.backgroundColor = .orange
-      //         self.contentView.addSubview(label)
-      //         label.backgroundColor = .red
-      //         return label
-      //      }()
       label.activateConstraint { label in
          let top = Constraint.anchor(label, to: self.titleLabel, align: .top, alignTo: .bottom, offset:Margin.verticalSpaceBetween)
          let bottom = Constraint.anchor(label, to: self.contentView, align: .bottom, alignTo: .bottom, offset:-Margin.vertical)

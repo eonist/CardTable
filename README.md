@@ -12,3 +12,4 @@ Organises TableView in cards
 ### Todo:
 - Disable scrollBar graphic
 - Make carthage framework
+- Rename to Card to SectionData etc

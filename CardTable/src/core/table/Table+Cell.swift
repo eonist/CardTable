@@ -17,7 +17,7 @@ extension Table:UITableViewDelegate,UITableViewDataSource{
         let section:Card = sections[indexPath.section]
         let data:CellDataKind = section.cellData[indexPath.row]
 //        let storyTitle:String = data.title//sections[indexPath.section].data[indexPath.row].title
-        Swift.print("indexPath:  \(indexPath)")
+//        Swift.print("indexPath:  \(indexPath)")
         var cell:RoundedCell = {
             if data is MiddleCardCellData  {
                 guard let cell:MiddleCardCell = tableView.dequeueReusableCell(withIdentifier: MiddleCardCell.cellReuseIdendifier, for: indexPath as IndexPath) as? MiddleCardCell else {fatalError("err")}//guard let cell:StoryTableCell = tableView.dequeueReusableCell(withIdentifier: StoryTableCell.cellIdentifier, for: indexPath as IndexPath) as? StoryTableCell else {fatalError("err")}
@@ -47,7 +47,7 @@ extension Table:UITableViewDelegate,UITableViewDataSource{
     }
     /**
      * Returns the height of each cell
-     * TODO: ⚠️️ put cellHeight into something overridable and remov the if else clauses
+     * TODO: ⚠️️ put cellHeight into something overridable and remove the if else clauses
      */
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          let cardCellData:CellDataKind = sections[indexPath.section].cellData[indexPath.row]

@@ -224,11 +224,11 @@
 		F16A585120EE51EB000D38BE /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				F16A585220EE51EB000D38BE /* util */,
-				F16A585520EE51EB000D38BE /* MiddleCardCellData.swift */,
-				F16A585620EE51EB000D38BE /* protocol */,
 				F16A585920EE51EB000D38BE /* TopCardCellData.swift */,
+				F16A585520EE51EB000D38BE /* MiddleCardCellData.swift */,
 				F16A585A20EE51EB000D38BE /* BottomCardCellData.swift */,
+				F16A585220EE51EB000D38BE /* util */,
+				F16A585620EE51EB000D38BE /* protocol */,
 			);
 			path = cell;
 			sourceTree = "<group>";

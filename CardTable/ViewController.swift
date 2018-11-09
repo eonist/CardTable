@@ -1,20 +1,5 @@
 import UIKit
 
-
-
-//add margins to things ✅
-//add margins to card
-//Disable sticky ✅
-//different BG-color
-   //find cool colors,that instagram post??
-//check notepad
-//add carthage
-//add bottom card 
-//make the cardlib open
-//fix topcard
-//Fix problem if there is only one top card, it should get top and bottom rounded
-//fix problem if topcard has section header, then drop rounded top for next item
-
 class ViewController: UIViewController {
    lazy var tableView:Table = createTable()
     override func viewDidLoad() {
