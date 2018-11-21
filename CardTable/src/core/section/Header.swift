@@ -1,5 +1,4 @@
 import UIKit
-
 /**
  * Header
  */
@@ -8,7 +7,6 @@ class Header:Section {
    override init(frame: CGRect) {
       super.init(frame: frame)
       _ = headerLabel
-      
    }
    /**
     * Boilerplate

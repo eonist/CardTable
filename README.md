@@ -13,3 +13,4 @@ Organises TableView in cards
 - Disable scrollBar graphic
 - Make carthage framework
 - Rename to Card to SectionData etc
+- Update to swift 4.2
