@@ -5,8 +5,9 @@ Organises TableView in cards
 
 ### Features:
 - Rounded corners
-- Cells group into cards
-- Top, Middle, Bottom cards
+- Cells group into
+- Cell-based, not Section based (MacOS doesn't have sections)
+- Top, Middle, Bottom cards (Distinct look and feel)
 - Utilises UITableView
 
 ### Todo:
